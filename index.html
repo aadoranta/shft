@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="./style/styles.css" />
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="logo">shft</div>
+    </nav>
+
+    <div class="banner">
+    <div class="banner-track">
+        <span>|&nbsp;&nbsp;Create &nbsp;&nbsp;|&nbsp;&nbsp;Curate &nbsp;&nbsp;|&nbsp;&nbsp;Shift &nbsp;&nbsp;|&nbsp;&nbsp;Create &nbsp;&nbsp;|&nbsp;&nbsp;Curate &nbsp;&nbsp;|&nbsp;&nbsp;Shift &nbsp;&nbsp;|&nbsp;&nbsp;Create &nbsp;&nbsp;|&nbsp;&nbsp;Curate &nbsp;&nbsp;|&nbsp;&nbsp;Shift &nbsp;&nbsp;</span>
+    </div>
+    </div>
+    <script>
+        const track = document.querySelector('.banner-track');
+        const clone = track.innerHTML;
+        track.innerHTML = clone + clone;
+    </script>
+
+    <section class="image-section">
+    <div class="image-wrapper">
+        <img class="image-back" src="./imgs/lightart2.jpg" alt="Image 1" />
+        <img class="image-front" src="./imgs/lightart1.jpg" alt="Image 2" />
+    </div>
+    </section>
+
+    <section class="info-section">
+    <div class="info-text">
+        <h>Welcome to shft</h>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        <a href="#" class="learn-more">Learn More</a>
+    </div>
+    <div class="info-image">
+        <img src="./imgs/open.jpg" alt="Info Image" />
+    </div>
+    </section>
+
+  </body>
+</html>
