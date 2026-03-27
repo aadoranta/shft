@@ -8,7 +8,8 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: Arial, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
 }
 
 /* ── Navbar ── */
@@ -27,7 +28,7 @@ body {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
   letter-spacing: 1px;
@@ -41,8 +42,8 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #fff;
-  font-size: 1rem;
+  color: #aaa;
+  font-size: 1.25rem;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -153,6 +154,24 @@ body {
   line-height: 1.8;
 }
 
+.info-section h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.info-section h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.info-section p {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
 .info-image {
   flex: 1;
 }
@@ -182,3 +201,113 @@ body {
   color: #000;
 }
 /* ── End Info Section ── */
+
+/* ── Subscribe Section ── */
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6vw 10vw;
+}
+
+.subscribe-section h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+}
+
+.subscribe-section h3 {
+  font-size: 1.25rem;
+  color: #aaa;
+  margin-bottom: 2vw;
+}
+
+.subscribe-section p {
+  font-size: 1rem;
+  color: #aaa;
+  margin-top: 2vw;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-input {
+  width: 30vw;
+  padding: 14px 20px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  outline: none;
+}
+
+.subscribe-input::placeholder {
+  color: #aaa;
+}
+
+.subscribe-btn {
+  padding: 14px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* ── End Subscribe Section ── */
+
+/* ── Footer ── */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 6vw;
+  border-top: 1px solid #fff;
+}
+
+.footer-nav .footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-nav .footer-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.footer-nav .footer-links a:hover {
+  color: #fff;
+}
+
+.footer-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-logo img {
+  width: 40vw;
+  height: auto;
+  object-fit: contain;
+}
+/* ── End Footer ── */
