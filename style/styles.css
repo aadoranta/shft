@@ -311,3 +311,122 @@ body {
   object-fit: contain;
 }
 /* ── End Footer ── */
+
+/* ── Info Section 2 ── */
+.info-section-2 {
+  display: flex;
+  align-items: flex-start;
+  gap: 6vw;
+  padding: 4vw 10vw;
+}
+
+.info-section-2-text {
+  flex: 1;
+}
+
+.info-section-2-text h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1vw;
+  color: #fff;
+}
+
+.info-section-2-text p {
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 1vw;
+}
+
+/* ── Accordion ── */
+.accordion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion-item {
+  border-top: 1px solid #fff;
+}
+
+.accordion-item:last-child {
+  border-bottom: 1px solid #fff;
+}
+
+.accordion-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.accordion-btn:hover {
+  color: #aaa;
+}
+
+.accordion-icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.accordion-content p {
+  padding-bottom: 16px;
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.accordion-item.active .accordion-content {
+  padding-top: 8px;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg);
+}
+/* ── End Info Section 2 ── */
+
+/* ── Blurbs Section ── */
+.blurbs-section {
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 10vw;
+}
+
+.blurb {
+  padding: 3vw 0;
+  border-bottom: 1px solid #fff;
+}
+
+.blurb:last-child {
+  border-bottom: 0px solid #fff;
+}
+
+.blurb h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1vw;
+}
+
+.blurb p {
+  font-size: 1.25rem;
+  color: #fff;
+  line-height: 1.4;
+}
+/* ── End Blurbs Section ── */

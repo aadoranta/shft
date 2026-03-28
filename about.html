@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shft</title>
+    <link rel="icon" type="image/png" href="./imgs/favicon.png" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="logo">shft</div>
+    </nav>
+
+    <section class="info-section-2">
+    <div class="info-section-2-text">
+        <h3>SHFT is about movement.</h3>
+        <p>Between cities, between genres, between ways of seeing. It's a place for music
+            art and culture made at the edges — shaped by borders but never confined by them.
+        </p>
+        <p>Rooted in borderlands and driven by curiosity, SHFT explores sound, images, and 
+            ideas just outside the center. It's where curation and creation live side by side,
+            designed to spark connection and shift how we listen, look, and think.
+        </p>
+        <p>SHFT treats the margins as a feature, not a flaw — a starting point, not a limitation.
+        </p>
+    </div>
+
+    <div class="accordion">
+        <div class="accordion-item">
+        <button class="accordion-btn">What We Do <span class="accordion-icon">+</span></button>
+        <div class="accordion-content">
+            <p>SHFT is a curatorial and creative platform that brings together music, writing
+                photography, and live events in search of new perspectives.
+            </p>
+            <p>Through concerts, recordings, publications, and collaborations, SHFT creates
+                space for artists and audiences to gather, connect, and reconsider the familiar.
+            </p>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+        <button class="accordion-btn">Where We're Rooted <span class="accordion-icon">+</span></button>
+        <div class="accordion-content">
+            <p>SHFT operates in and between Windsor, Ontario and Detroit, Michigan — two cities 
+                separated by a river, connected by deep economic and cultural history, 
+                and shaped by movement.
+            </p>
+        </div>
+        </div>
+
+        <div class="accordion-item">
+        <button class="accordion-btn">Who We Are <span class="accordion-icon">+</span></button>
+        <div class="accordion-content">
+            <p>SHFT was founded by Austin Di Pietro, a multidisciplinary artist, musician, and writer
+                based in the Windsor-Detroit region. Much of his work is shaped by crossing between 
+                places — geographically, creatively, and culturally.
+            </p>
+            <p>SHFT brings those interests together in one place, making room for projects that
+                don't fit neatly into one category.
+            </p>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="blurbs-section">
+    <div class="blurb">
+        <h3>SHFT Presents</h3>
+        <p>A curated concert series featuring original projects and invited artists working across genres and disciplines. Live 
+            experiences that prioritize collaboration, experimentation, and cross-border exchange.
+        </p>
+    </div>
+
+    <div class="blurb">
+        <h3>SHFT Studios</h3>
+        <p>An independent recording and production space dedicated to original music and collaborative projects. SHFT Studios
+            serves as both laboratory and launch point — a place to experiment, document, and release work shaped by 
+            place and perspective.
+        </p>
+    </div>
+
+    <div class="blurb">
+        <h3>SHFT Notes</h3>
+        <p>Long-form essays, reflections, and field notes exploring borders, music, culture, and creative practice. Writing
+            lives primarily on Substack, with selected pieces and printed zines extending the conversation into 
+            physical form.
+        </p>
+    </div>
+
+    <div class="blurb">
+        <h3>SHFT Projects</h3>
+        <p>A home for interdisciplinary and evolving work — from pop-up events to small publications, installations, and
+            experimental collaborations. For the project that doesn't fit neatly inside one box.
+        </p>
+    </div>
+    </section>
+
+    <footer class="footer">
+      <nav class="footer-nav">
+        <ul class="footer-links">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-logo">
+        <img src="./imgs/shftLogo1.png" alt="Logo" />
+      </div>
+    </footer>
+
+    <script>
+    document.querySelectorAll('.accordion-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const content = item.querySelector('.accordion-content');
+
+        item.classList.toggle('active');
+
+        if (item.classList.contains('active')) {
+            content.style.maxHeight = content.scrollHeight + 'px';
+            content.style.paddingBottom = '16px';
+        } else {
+            content.style.maxHeight = '0';
+            content.style.paddingBottom = '0';
+        }
+        });
+    });
+    </script>
+
+  </body>
+</html>
