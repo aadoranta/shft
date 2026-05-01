@@ -32,6 +32,7 @@ body {
   font-weight: bold;
   color: #fff;
   letter-spacing: 1px;
+  font-style: italic;
 }
 
 .nav-links {
@@ -81,7 +82,7 @@ body {
 
 .banner-track {
   display: inline-block;
-  animation: scroll-banner 20s linear infinite;
+  animation: scroll-banner 50s linear infinite;
 }
 
 .banner-track span {
@@ -272,10 +273,10 @@ body {
 
 /* ── Footer ── */
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
-  padding: 3vw 6vw;
+  padding: 10px 6vw; 
   border-top: 1px solid #fff;
 }
 
@@ -284,6 +285,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-nav .footer-links a {
@@ -300,15 +303,14 @@ body {
 }
 
 .footer-logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  grid-column: 2;
 }
 
 .footer-logo img {
-  width: 40vw;
-  height: auto;
-  object-fit: contain;
+  width: 15vw;
+  height: 10vw;                   /* ✅ constrain the height to crop */
+  object-fit: cover;             /* ✅ clips the extra space in the image */
+  display: block;
 }
 /* ── End Footer ── */
 
