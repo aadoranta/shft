@@ -432,3 +432,163 @@ body {
   line-height: 1.4;
 }
 /* ── End Blurbs Section ── */
+
+/* ── Mobile Menu Toggle ── */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 200;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    padding: 20px 20px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70vw;
+    height: 100vh;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right 0.4s ease;
+    z-index: 150;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.5rem;
+  }
+
+  /* Banner */
+  .banner-track span {
+    font-size: 2.5rem;
+  }
+
+  /* Image Section */
+  .image-section {
+    padding: 4vw 5vw;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+  }
+
+  .image-back,
+  .image-front {
+    position: static;
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Info Section */
+  .info-section {
+    flex-direction: column;
+    padding: 8vw 6vw;
+  }
+
+  .info-section h2 {
+    font-size: 2rem;
+  }
+
+  .info-section p {
+    font-size: 1.1rem;
+  }
+
+  /* Info Section 2 */
+  .info-section-2 {
+    flex-direction: column;
+    padding: 8vw 6vw;
+  }
+
+  .info-section-2-text h3 {
+    font-size: 2rem;
+  }
+
+  .info-section-2-text p {
+    font-size: 1.1rem;
+  }
+
+  /* Blurbs */
+  .blurbs-section {
+    padding: 8vw 6vw;
+  }
+
+  .blurb h3 {
+    font-size: 2rem;
+  }
+
+  .blurb p {
+    font-size: 1rem;
+  }
+
+  /* Subscribe */
+  .subscribe-section {
+    padding: 10vw 6vw;
+  }
+
+  .subscribe-section h2 {
+    font-size: 2rem;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subscribe-input {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px 6vw;
+  }
+
+  .footer-logo {
+    grid-column: auto;
+  }
+
+  .footer-logo img {
+    width: 40vw;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .footer-nav .footer-links {
+    align-items: center;
+  }
+}
