@@ -24,21 +24,12 @@ body {
   z-index: 100;
 }
 
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fff;
-  letter-spacing: 1px;
-  font-style: italic;
-}
-
 .nav-links {
   list-style: none;
   display: flex;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
@@ -53,6 +44,19 @@ body {
   color: #fff;
 }
 
+.header-logo {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 120px;
+  height: 50px;
+  object-fit: cover;   
+  display: block;
+}
 /* ── Main Content ── */
 .content {
   padding: 60px 40px;
@@ -90,7 +94,7 @@ body {
   font-weight: bold;
   color: #fff;
   letter-spacing: 3px;
-  text-transform: uppercase;
+  text-transform: lowercase;
 }
 
 @keyframes scroll-banner {
@@ -308,8 +312,8 @@ body {
 
 .footer-logo img {
   width: 15vw;
-  height: 10vw;                   /* ✅ constrain the height to crop */
-  object-fit: cover;             /* ✅ clips the extra space in the image */
+  height: 10vw;                 
+  object-fit: cover;
   display: block;
 }
 /* ── End Footer ── */
